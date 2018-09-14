@@ -12,7 +12,9 @@
 /*global styles */
 * {
     /* #2 #font #faces */
-    font-family: 'Arial', sans-serif;
+    font-family: 'Roboto', sans-serif;
+    padding: 0px;
+    margin: 0px;
 }
 
 body {
@@ -30,11 +32,12 @@ button {
     /* #2 #colourful #plusfive */
     background-color: #CDDC39;
     color: black;
+    
+}
+button, a {
     /* #2 #font capital #letters */
     text-transform: uppercase;
 }
-
-
 /*styles for channel area*/
 h2 {
     /* #2 #colorful #channelandchat */
@@ -64,22 +67,75 @@ em {
 }
 
 /* original style--!>*/
-
+#app-bar {
+    padding: 0px;
+    margin: 0px;
+}
 #app-bar img {
     height: 56px;
 }
+
 #channel-list ul {
     list-style-type: none;
     padding: 0px;
+    
+}
+
+#channel-list ul li {
+    padding: 16px;
+    border-bottom: thin solid lightgray;
+    font-size: 16px;
+    background-color:white; 
+
+}
+
+/* how to make img's in channel list in the middle ;; */
+#channel-list ul li img {   
+    vertical-align: middle;
+}
+.highlight {
+    border-left : thick solid blue;
+    color: #3F51B5;
 }
 #tab-bar {
     background-color: white
 }
 
+#tab-bar button {
+    background-color: white;
+    border: none;
+    font-size: 13px;
+    width: 33%;
+    height: 72px;
+    padding: 16px;
+}
 
+#tab-bar button img {
+    margin: auto;
+    display: block;
+    padding-bottom: 4px;
+}
+
+.selected {
+    border-bottom:4px solid #3F51B5 !important;  
+}
 .msg-container{
     width: 80%;
+    margin-left:2.5%;
 }
 h3 strong a {
     color: black; /*Primary text color */
+}
+
+.msg-metadata {
+    font-size: medium;
+}
+
+.msg-selected {
+    margin-left:17.5%;
+    margin-bottom: 8px;
+}
+.msg-container p {
+    padding-top: 16px;
+    padding-bottom: 16px;
 }
